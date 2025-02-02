@@ -1,5 +1,5 @@
 
-    <!DOCTYPE html>
+   <!DOCTYPE html>
 <html lang="pt">
 <head>
     <meta charset="UTF-8">
@@ -12,36 +12,30 @@
         body {
             font-family: 'Times New Roman', sans-serif;
             color: #d55757;
+            text-align: center;
         }
 
         /* Títulos */
         h1 {
             color: white !important;
             background-color: lightpink;
-            text-align: center !important;
             padding: 10px;
         }
 
         h2 {
             color: #c85589 !important;
-            text-align: center;
         }
 
         h3 {
             color: #8fb0ec;
-            text-align: center !important;
         }
 
-        /* Container de imagem com fundo */
-        .imagem-quadro {
+        /* Imagem sem o quadro */
+        .imagem {
             width: 200px;
-            height: 200px;
-            border: 10px ridge white; /* Borda 3D */
-            background-color: lightpink; /* Cor de fundo */
-            background-image: url('kitty4.jpg'); /* Caminho da imagem */
-            background-size: cover; /* Ajusta a imagem ao tamanho do quadro */
-            background-position: center; /* Centraliza a imagem */
-            margin: 10px auto; /* Centraliza na página */
+            height: auto;
+            display: block;
+            margin: 20px auto; /* Centraliza a imagem */
         }
 
         /* Texto sobreposto */
@@ -52,25 +46,24 @@
             color: #ac6d77;
             border-radius: 5px;
             width: 80%;
-            margin: auto;
+            margin: 10px auto;
             text-align: center;
-            display: block;
         }
 
         /* Lista */
         .lista {
             list-style-type: disc; /* Adiciona bolinhas */
-            padding-left: 30px;
+            padding-left: 0;
             font-size: 16px;
             color: #ed8ebd;
-            text-align: left;
-            width: fit-content;
-            margin: auto;
+            text-align: center;
+            display: inline-block;
         }
 
-        /* Video centralizado */
+        /* Vídeo centralizado */
         .video-container {
             text-align: center;
+            margin-top: 20px;
         }
     </style>
 </head>
@@ -79,7 +72,8 @@
     <h1>Para o meu amor!</h1>
     <h2>Um ano ao lado do meu amor!</h2>
 
-    <div class="imagem-quadro"></div> <!-- Quadro com imagem de fundo -->
+    <!-- Imagem sem o quadro -->
+    <img src="kitty4.jpg" alt="Foto do nosso momento" class="imagem">
 
     <p class="texto-sobreposto">
         Um ano junto ao lado do meu amor! 
@@ -96,7 +90,7 @@
         <li>E por final, você!</li>
     </ul>
 
-    <p style="text-align: center;">
+    <p>
         Um ano ao lado da pessoa que eu amo mais, ao lado da pessoa que me ensinou como é o amor e como ele pode ser bonito. 
         Me ensinou que por vezes pode ter conflitos, mas nunca sem soluções.
     </p>
@@ -110,7 +104,7 @@
         </iframe>
     </div>
 
-    <p style="text-align: center;">
+    <p>
         Um ano de namoro, eu ainda não acredito que já se passou um ano! 
         Um ano cheio de boas memórias que eu nunca vou me esquecer. 
         Ter você em minha vida significa o mundo pra mim! 
