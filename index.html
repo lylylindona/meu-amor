@@ -1,86 +1,91 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+
+    <!DOCTYPE html>
+<html lang="pt">
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <title>Meu Dengo!</title>
-    <link rel="stylesheet" href="styles.css" />
-    <script src="script.js"></script>  
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 
     <style>
+        /* Estilos gerais */
         body {
-            font-family: "Times New Roman", sans-serif;
+            font-family: 'Times New Roman', sans-serif;
             color: #d55757;
-            font-size: medium;
         }
 
+        /* Títulos */
         h1 {
-            color: white;
+            color: white !important;
             background-color: lightpink;
-            text-align: center;
+            text-align: center !important;
             padding: 10px;
         }
 
         h2 {
-            color: #c85589;
+            color: #c85589 !important;
             text-align: center;
         }
 
         h3 {
             color: #8fb0ec;
-            text-align: center;
+            text-align: center !important;
         }
 
-        .container {
-            display: flex;  
-            align-items: center; /* Agora alinha a imagem e o texto corretamente */
-            gap: 10px; /* Mais espaçamento */
-            margin: 20px; /* Adiciona um espaço ao redor */
-        }
-
+        /* Container de imagem com fundo */
         .imagem-quadro {
             width: 200px;
-            height: auto;
-            border: 10px ridge white;
-            padding: 10px;
-            background-color: lightpink;
-            display: block; /* Garante que a imagem não tenha problemas de alinhamento */
+            height: 200px;
+            border: 10px ridge white; /* Borda 3D */
+            background-color: lightpink; /* Cor de fundo */
+            background-image: url('kitty4.jpg'); /* Caminho da imagem */
+            background-size: cover; /* Ajusta a imagem ao tamanho do quadro */
+            background-position: center; /* Centraliza a imagem */
+            margin: 10px auto; /* Centraliza na página */
         }
 
+        /* Texto sobreposto */
         .texto-sobreposto {
-            background-color: rgba(255, 182, 193, 0.6);
+            background-color: rgba(255, 182, 193, 0.6); /* Fundo rosa claro transparente */
             padding: 10px;
             font-weight: bold;
             color: #ac6d77;
             border-radius: 5px;
-            max-width: 400px;
+            width: 80%;
+            margin: auto;
+            text-align: center;
+            display: block;
         }
 
+        /* Lista */
         .lista {
-            list-style-type: disc;
-            padding-left: 40px; 
+            list-style-type: disc; /* Adiciona bolinhas */
+            padding-left: 30px;
             font-size: 16px;
             color: #ed8ebd;
+            text-align: left;
+            width: fit-content;
+            margin: auto;
         }
 
+        /* Video centralizado */
         .video-container {
             text-align: center;
-            margin-top: 20px;
         }
     </style>
-
 </head>
 <body>
 
     <h1>Para o meu amor!</h1>
     <h2>Um ano ao lado do meu amor!</h2>
 
-    <div class="container">
-        <img src="kitty4.jpg" alt="Foto em Quadro" class="imagem-quadro" />
-        <p class="texto-sobreposto">
-            Um ano junto ao lado do meu amor! Eu poderia ficar mais de uma hora lhe dizendo 
-            o quanto eu te acho perfeito! Mas eu prefiro falar o que eu amo tanto em você!
-        </p>
-    </div>
+    <div class="imagem-quadro"></div> <!-- Quadro com imagem de fundo -->
+
+    <p class="texto-sobreposto">
+        Um ano junto ao lado do meu amor! 
+        Eu poderia ficar mais de uma hora lhe dizendo o quanto eu te acho perfeito! 
+        Mas eu prefiro falar o que eu amo tanto em você!
+    </p>
 
     <ul class="lista">
         <li>O seu sorriso</li>
@@ -91,10 +96,12 @@
         <li>E por final, você!</li>
     </ul>
 
-    <p>Um ano ao lado da pessoa que eu amo mais, ao lado da pessoa que me ensinou como é o amor 
-    e como ele pode ser bonito, me ensinou que por vezes pode ter conflitos, mas nunca sem soluções.</p>
+    <p style="text-align: center;">
+        Um ano ao lado da pessoa que eu amo mais, ao lado da pessoa que me ensinou como é o amor e como ele pode ser bonito. 
+        Me ensinou que por vezes pode ter conflitos, mas nunca sem soluções.
+    </p>
 
-    <h3>A Música que pra sempre vai marcar o nosso relacionamento</h3>
+    <h3>A música que pra sempre vai marcar o nosso relacionamento</h3>
 
     <div class="video-container">
         <iframe width="458" height="219" 
@@ -103,13 +110,16 @@
         </iframe>
     </div>
 
-    <p>Um ano de namoro, eu ainda não acredito que já se passou um ano! Um ano cheio de boas 
-    memórias que eu nunca vou me esquecer. Ter você em minha vida significa o mundo para mim! 
-    Olhar para você automaticamente já me faz soltar um sorriso bobo, até porque você me deixa 
-    toda boba por você! Eu te amo! Eu te amo com a alma! Tudo em você é perfeito! E um dia eu 
-    espero de verdade mesmo te ver no altar vestido com um terno lindo! Igual a você, meu dengo! 
-    Eu te amo.<br>  
-    <strong>Ass: A sua princesa</strong>
+    <p style="text-align: center;">
+        Um ano de namoro, eu ainda não acredito que já se passou um ano! 
+        Um ano cheio de boas memórias que eu nunca vou me esquecer. 
+        Ter você em minha vida significa o mundo pra mim! 
+        Olhar para você automaticamente já me faz soltar um sorriso bobo, 
+        até porque você me deixa toda boba por você! Eu te amo! Eu te amo com a alma! 
+        Tudo em você é perfeito! 
+        E um dia eu espero de verdade mesmo te ver no altar, vestido com um terno lindo! 
+        Igual a você, meu dengo! Eu te amo. 
+        <br><strong>Ass: A sua princesa</strong>
     </p>
 
 </body>
