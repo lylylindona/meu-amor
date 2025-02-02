@@ -32,8 +32,9 @@
 
         .container {
             display: flex;  
-            align-items: flex-start; 
+            align-items: center; /* Agora alinha a imagem e o texto corretamente */
             gap: 10px; /* Mais espaçamento */
+            margin: 20px; /* Adiciona um espaço ao redor */
         }
 
         .imagem-quadro {
@@ -42,24 +43,16 @@
             border: 10px ridge white;
             padding: 10px;
             background-color: lightpink;
-        }
-
-        .imagem-container {
-            position: relative;
-            display: flex;
-            gap: 10px;
+            display: block; /* Garante que a imagem não tenha problemas de alinhamento */
         }
 
         .texto-sobreposto {
-            position: absolute;
-            top: 20px;   
-            left: 220px; /* Ajuste para alinhar melhor */
-            width: 400px;
             background-color: rgba(255, 182, 193, 0.6);
             padding: 10px;
             font-weight: bold;
             color: #ac6d77;
             border-radius: 5px;
+            max-width: 400px;
         }
 
         .lista {
@@ -82,13 +75,11 @@
     <h2>Um ano ao lado do meu amor!</h2>
 
     <div class="container">
-        <div class="imagem-container">
-            <img src="kitty4.jpg" alt="Foto em Quadro" class="imagem-quadro"/>
-            <p class="texto-sobreposto">
-                Um ano junto ao lado do meu amor! Eu poderia ficar mais de uma hora lhe dizendo 
-                o quanto eu te acho perfeito! Mas eu prefiro falar o que eu amo tanto em você!
-            </p>
-        </div>
+        <img src="kitty4.jpg" alt="Foto em Quadro" class="imagem-quadro" />
+        <p class="texto-sobreposto">
+            Um ano junto ao lado do meu amor! Eu poderia ficar mais de uma hora lhe dizendo 
+            o quanto eu te acho perfeito! Mas eu prefiro falar o que eu amo tanto em você!
+        </p>
     </div>
 
     <ul class="lista">
